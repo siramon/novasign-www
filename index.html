@@ -16,7 +16,7 @@ h1 {
 	margin:1em auto;
 	padding:0;
 }
-#contact, #person, #skills, #interest {
+article {
 	font-family: Courier;
 	width: 50%;
 	border: 1px solid black;
@@ -46,6 +46,23 @@ dt { font-weight: bold; }
 	position: fixed;
 	bottom: 10px;
 	right: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+h1 { width: auto }
+article { width: auto }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+h1 { width: 70% }
+article { width: 70% }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+h1 { width: 50% }
+article { width: 50% }
+}
+@media (min-width: 768px) {
+h1 { width: 600px }
+article { width: 600px }
 }
 
 </style>
@@ -82,7 +99,7 @@ dt { font-weight: bold; }
 
 <article id="interest">
 	<h2>Interest</h2>
-	<dt>work related</dt><dd>Looking for a new challenge from autumn 2019 <a href="docs/cv.pdf">Curriculum Vitae</a> (pdf, version of march 2019)</dd>
+	<dt>work related</dt><dd>Looking for a new challenge from autumn 2019<br><a href="docs/cv.pdf">Curriculum Vitae</a> <em style="font-size:60%">(pdf, german, 03-2019)</em></dd>
 	<dt>personal random list</dt><dd><a href="https://www.selfhtml.org/">selfRaum</a> | <a href="selfhtml/treffen02hh/">SelfHTML Treffen 2002 - Bilder</a> | <a href="https://ascension.ch/">Alt-Herren-LAN</a> | <a href="http://thface.novasign.ch/">Roleplay</a> <a href="http://prd.5footstep.de/">Gaming</a> | <a href="https://www.chessmail.de/">Fernschach</a></dd>
 </article>
 
