@@ -3,63 +3,91 @@
 <head>
 	<title>Rolf Sonderegger, spatial planner | novasign.ch</title>
 <style>
+html { font-size:1em; }
+body {
+	font-size: 90%;
+	font-family: 'Courier New', Courier, monospace;
+	margin-bottom: 100px;
+	background-color:#fff;
+}
+h1 {
+	width: 50%;
+	font-size:120%;
+	margin:1em auto;
+	padding:0;
+}
 #contact, #person, #skills, #interest {
-font-family: Courier;
-width: 50%;
-border: 1px solid black;
-padding: 10px 100px 10px 10px;
-margin: 30px auto;
-background-color:#eee;
-position:relative;
+	font-family: Courier;
+	width: 50%;
+	border: 1px solid black;
+	padding: 10px 100px 10px 10px;
+	margin: 30px auto;
+	background-color:#eee;
+	position:relative;
 }
-
 h2 {
-color:#999;
-font-style: italic;
-position:absolute;
-right:10px;
-top:-10px;
-font-size:inherit;
+	color:#999;
+	font-style: italic;
+	position:absolute;
+	right:10px;
+	top:-10px;
+	font-size:1em;
 }
+h2::before { content: "["; }
+h2::after { content: "]"; }
+
+dl { margin-top: 0.5em; }
+dt { font-weight: bold; }
 
 #imprint {
-position: absolute;
-bottom: 10px;
-right: 10px;
+	display: block;
+	background-color: white;
+	padding: 20px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
 }
 
 </style>
 </head>
 <body>
 
+<h1>Rolf Sonderegger | developer &amp; spatial planner | based in Zurich, CH</h1>
+<article id="person">
+<h2>Person</h2>
+<dl>
+	<dt>Name</dt><dd>Rolf Sonderegger</dd>
+	<dt>Nickname</dt><dd>siramon</dd>
+	<dt>Sex</dt><dd>he/him/his</dd>
+	<dt>more</dt><dd>married, father of four / based in Zurich with love / more on <a href="https://twitter.com/siramon/">twitter</a> and <a href="https://www.instagram.com/siramon_42/">instagram</a></dd>
+</dl>
+</article>
 
-<div id="person">
-<h2>[Person]</h2>
-<strong>Name</strong>: Rolf Sonderegger<br>
-<strong>Nickname</strong>: siramon<br>
-<strong>Location</strong>: Zurich, CH<br>
-<strong>Private</strong>: Father of four / In Zurich with Love | more on <a href="https://twitter.com/siramon/">twitter</a> and <a href="https://www.instagram.com/siramon_42/">instagram</a><br>
-</div>
-<div id="contact">
-<h2>[Contact]</h2>
-<strong>E-Mail</strong>: siramon@gmx.ch<br>
-<strong>PGP Fingerprint</strong>: 118A EF9D 2896 1127 688C 20CD 5E64 3E10 5AF8 D887
-</div>
+<article id="contact">
+<h2>Contact</h2>
+<dl>
+	<dt>E-Mail</dt><dd><a href="mailto:siramon@gmx.ch">siramon@gmx.ch</a></dd>
+	<dt>PGP Fingerprint</dt><dd>118A EF9D 2896 1127 688C 20CD 5E64 3E10 5AF8 D887</dd>
+	<dt>Threema</dt><dd>4RD58X9P</dd>
+</dl>
+</article>
 
-<div id="skills">
-<h2>[Skills]</h2>
-<strong>Work</strong>: All sorts of (Web-)Dev / Geography / Spatial planning / <a href="https://www.raumplus.ethz.ch/">Current project is Raum+</a> | more on <a href="https://www.linkedin.com/in/rolf-sonderegger-57019049/">linkedin</a> (login required)<br>
-<strong>Education</strong>: <a href="https://www.geo.uzh.ch/">MSc Geography UZH</a>, candidate <a href="http://www.masraumplanung.ethz.ch/">MAS Spatial Planning ETHZ</a><br>
-</div>
-<div id="interest">
-<h2>[Interest]</h2>
-<pre> <a href="https://www.selfhtml.org/">selfRaum</a> | <a href="selfhtml/treffen02hh/">SelfHTML Treffen 2002 - Bilder</a>
- <a href="https://ascension.ch/">Alt-Herren-LAN</a> | <a href="http://thface.novasign.ch/">Roleplay</a> <a href="http://prd.5footstep.de/">Gaming</a>
- <a href="https://www.chessmail.de/">Fernschach</a>
-</pre>
-</div>
-<pre id="imprint">
+<article id="skills">
+<h2>Skills</h2>
+<dl>
+	<dt>Work</dt><dd>All sorts of (Web-)Dev / Spatial data manipulation / Statistics / Spatial planning / <a href="https://www.raumplus.ethz.ch/">Current project is Raum+</a> | more on <a href="https://www.linkedin.com/in/rolf-sonderegger-57019049/">linkedin</a> (login required)</dd>
+	<dt>Education</dt><dd><a href="https://www.geo.uzh.ch/">MSc Geography UZH</a>, candidate <a href="http://www.masraumplanung.ethz.ch/">MAS Spatial Planning ETHZ</a></dd>
+</dl>
+</article>
+
+<article id="interest">
+	<h2>Interest</h2>
+	<dt>work related</dt><dd>Looking for a new challenge from autumn 2019 <a href="docs/cv.pdf">CV (pdf)</a></dd>
+	<dt>personal random list</dt><dd><a href="https://www.selfhtml.org/">selfRaum</a> | <a href="selfhtml/treffen02hh/">SelfHTML Treffen 2002 - Bilder</a> | <a href="https://ascension.ch/">Alt-Herren-LAN</a> | <a href="http://thface.novasign.ch/">Roleplay</a> <a href="http://prd.5footstep.de/">Gaming</a> | <a href="https://www.chessmail.de/">Fernschach</a></dd>
+</article>
+
+<nav id="imprint">
 made with love in Zurich, [imprint] see [Person], last update: 2019-03-29
-</pre>
+</nav>
 </body>
 </html>
