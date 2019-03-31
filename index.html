@@ -35,10 +35,40 @@ h2 {
 }
 h2::before { content: "["; }
 h2::after { content: "]"; }
-
+article a {
+	color: inherit;
+}
 dl { margin-top: 0.5em; }
-dt { font-weight: bold; }
+dt { font-weight: bold; margin-top: 10px; }
 
+#person {
+	background-color: #feebe2;
+	color: #1E1E1E;
+}
+#person h2 {
+	color: #ae017e;
+}
+#contact {
+	background-color: #fbb4b9;
+	color:#1E1E1E;
+}
+#contact h2 {
+	color: #803A6C;
+}
+#skills {
+	background-color: #f768a1;
+	color:#1E1E1E;
+}
+#skills h2 {
+	color: #4F4D45;
+}
+#interests {
+	background-color: #ae017e;
+	color:#fff;
+}
+#interests h2 {
+	color: #feebe2;
+}
 #imprint {
 	display: block;
 	background-color: white;
@@ -47,10 +77,37 @@ dt { font-weight: bold; }
 	bottom: 10px;
 	right: 10px;
 }
+.main {
+	display:none;
+	margin:auto;
+	width:auto;
+}
+.main ul {
+	list-style-position: inside;
+}
+.main li {
+	display: inline;
+	padding: 10px;
+}
+.main a {
+	text-decoration: none;
+}
+.main a::before { content: "<"; }
+.main a::after { content: ">"; }
+
+@media (min-width: 320px) and (max-width: 800px) {
+	html {
+		margin-bottom:300px;
+	}
+	.main {
+		display: block;
+	}
+}
 
 @media (min-width: 576px) {
 	body {
-		font-size: 130%;
+		font-size: 150%;
+		margin-bottom: 150px;
 	}
 	h1, article {
 		width: auto;
@@ -60,7 +117,7 @@ dt { font-weight: bold; }
 
 @media (min-width: 768px) {
 	body {
-		font-size: 130%;
+		font-size: 150%;
 	}
 	h1, article {
 		width: auto;
@@ -70,7 +127,7 @@ dt { font-weight: bold; }
 
 @media (min-width: 992px) {
 	body {
-		font-size: 130%;
+		font-size: 150%;
 	}
 	h1, article {
 		width: auto;
@@ -80,7 +137,7 @@ dt { font-weight: bold; }
 
 @media (min-width: 1200px) {
 	body {
-		font-size: 150%;
+		font-size: 130%;
 	}
 	h1, article {
 		width: auto;
@@ -91,16 +148,23 @@ dt { font-weight: bold; }
 </style>
 </head>
 <body>
-
+<nav class="main">
+<ul>
+	<li><a href="#person">Person</a></li>
+	<li><a href="#contact">Contact</a></li>
+	<li><a href="#skills">Skills</a></li>
+	<li><a href="#interests">Interests</a></li>
+</ul>
+</nav>
 <h1>Rolf Sonderegger | developer &amp; spatial planner | based in Zurich, CH</h1>
 <article id="person">
 <h2>Person</h2>
 <dl>
 	<dt>Name</dt><dd>Rolf Sonderegger</dd>
 	<dt>Nickname</dt><dd>siramon</dd>
-	<dt>Sex</dt><dd>he/him/his</dd>
-	<dt>more</dt><dd>married, father of four / based in Zurich with love / more on <a href="https://twitter.com/siramon/">twitter</a> and <a href="https://www.instagram.com/siramon_42/">instagram</a></dd>
+	<dt>Gender</dt><dd>he/him/his</dd>
 </dl>
+<p>married | father of four | based in #Zurich #Switzerland | more on <a href="https://twitter.com/siramon/">twitter</a> and <a href="https://www.instagram.com/siramon_42/">instagram</a></p>
 </article>
 
 <article id="contact">
@@ -110,24 +174,28 @@ dt { font-weight: bold; }
 	<dt>PGP Fingerprint</dt><dd>118A EF9D 2896 1127 688C 20CD 5E64 3E10 5AF8 D887</dd>
 	<dt>Threema</dt><dd>4RD58X9P</dd>
 </dl>
+<p>Please drop me a line, if you have comments, questions or ideas</p>
 </article>
 
 <article id="skills">
 <h2>Skills</h2>
 <dl>
-	<dt>Work</dt><dd>All sorts of (Web-)Dev / Spatial data manipulation / Statistics / Spatial planning / <a href="https://www.raumplus.ethz.ch/">Current project is Raum+</a> | more on <a href="https://www.linkedin.com/in/rolf-sonderegger-57019049/">linkedin</a> (login required)</dd>
+	<dt>Work</dt><dd>All sorts of (Web-)Dev / Spatial data manipulation / Statistics / Spatial planning / <a href="https://www.raumplus.ethz.ch/">Current project is called Raum<sup>+</sup></a> | more on <a href="https://www.linkedin.com/in/rolf-sonderegger-57019049/">LinkedIn</a> <em style="font-size:60%">(login required)</em></dd>
 	<dt>Education</dt><dd><a href="https://www.geo.uzh.ch/">MSc Geography UZH</a>, candidate <a href="http://www.masraumplanung.ethz.ch/">MAS Spatial Planning ETHZ</a></dd>
+</dl>
+
+</article>
+
+<article id="interests">
+<h2>Interests</h2>
+<dl>
+	<dt>work related</dt><dd>Looking for a new challenge from autumn 2019<br><a href="docs/cv.pdf">Curriculum Vitae</a> <em style="font-size:60%">(pdf, german, 03-2019)</em></dd>
+	<dt>personal random list</dt><dd><a href="https://www.selfhtml.org/">selfRaum</a> | <a href="selfhtml/treffen02hh/">SelfHTML Treffen 2002 - Bilder</a> | <a href="https://ascension.ch/">Alt-Herren-LAN</a> | <a href="http://thface.novasign.ch/">Roleplay</a> <a href="http://prd.5footstep.de/">Gaming</a> | <a href="https://www.chessmail.de/">Fernschach</a></dd>
 </dl>
 </article>
 
-<article id="interest">
-	<h2>Interest</h2>
-	<dt>work related</dt><dd>Looking for a new challenge from autumn 2019<br><a href="docs/cv.pdf">Curriculum Vitae</a> <em style="font-size:60%">(pdf, german, 03-2019)</em></dd>
-	<dt>personal random list</dt><dd><a href="https://www.selfhtml.org/">selfRaum</a> | <a href="selfhtml/treffen02hh/">SelfHTML Treffen 2002 - Bilder</a> | <a href="https://ascension.ch/">Alt-Herren-LAN</a> | <a href="http://thface.novasign.ch/">Roleplay</a> <a href="http://prd.5footstep.de/">Gaming</a> | <a href="https://www.chessmail.de/">Fernschach</a></dd>
-</article>
-
 <nav id="imprint">
-made with love in Zurich, [imprint] see [Person], last update: 2019-03-29
+made with love in Zurich, [imprint] see [<a href="#person">Person</a>], last update: 2019-03-29
 </nav>
 </body>
 </html>
